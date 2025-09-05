@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyBank Online</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
+    .login-container, .balance-container {
+      max-width: 400px; margin: 80px auto; padding: 30px; background: white; border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; color: #b30000; }
+    input[type="text"], input[type="password"] {
+      width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;
+    }
+    button { width: 100%; padding: 12px; background: #b30000; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #990000; }
+    .hidden { display: none; }
+    .balance { font-size: 24px; text-align: center; margin: 20px 0; }
+    .transactions { margin-top: 20px; }
+    .transaction { border-bottom: 1px solid #eee; padding: 10px 0; }
+    .nav { display: flex; justify-content: space-around; margin-top: 30px; }
+    .nav button { width: auto; flex: 1; margin: 0 5px; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+<div class="login-container" id="login-screen">
+  <h2>KeyBank Sign In</h2>
+  <input type="text" id="username" placeholder="User ID">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Sign In</button>
+</div>
+
+<div class="balance-container hidden" id="balance-screen">
+  <h2>Welcome</h2>
+  <div class="balance">$3,345.76</div>
+
+  <div class="transactions">
+    <div class="transaction"><strong>Jar Transfer</strong><br><small>2025-09-04</small></div>
+    <div class="transaction"><strong>Zelle - Melissa Coy</strong><br><small>-$60.00</small></div>
+    <div class="transaction"><strong>ATM Withdrawal - Bank of America</strong><br><small>-$250.00 (Last Friday)</small></div>
+    <div class="transaction"><strong>ACH Credit - Random Deposit</strong><br><small>$532.00</small></div>
+    <div class="transaction"><strong>Pending - Amazon Prime</strong><br><small>-$14.99</small></div>
+  </div>
+
+  <div class="nav">
+    <button onclick="progress()">Deposit</button>
+    <button onclick="progress()">Pay Bills</button>
+    <button onclick="progress()">More</button>
+  </div>
+</div>
+
+<script>
+  function login() {
+    const u = document.getElementById("username").value;
+    const p = document.getElementById("password").value;
+    if (u && p) {
+      document.getElementById("login-screen").classList.add("hidden");
+      document.getElementById("balance-screen").classList.remove("hidden");
+    } else {
+      alert("Please enter both fields.");
+    }
+  }
+
+  function progress() {
+    alert("Account update in progress.");
+  }
+</script>
+
+</body>
+</html>
