@@ -1,0 +1,51 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+.container, .update-box, .account-box, .section {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.logo {
+    max-width: 200px;
+}
+label, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.signin-button, .buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #cc0000;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.buttons a {
+    margin: 5px;
+}
+.header {
+    background: #cc0000;
+    color: white;
+    padding: 20px;
+}
+.balance {
+    font-size: 2em;
+    margin: 10px 0;
+    color: green;
+}
