@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KeyBank Online</title>
+    <link rel="icon" href="https://www.key.com/favicon.ico" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #000;
+        }
+        .header {
+            background: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            height: 30px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .account-info {
+            background: #f7f7f7;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .account-info h1 {
+            color: #c00;
+            margin-top: 0;
+        }
+        .transaction {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .transaction:last-child {
+            border-bottom: none;
+        }
+        .nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            border-top: 1px solid #ccc;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: #c00;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.key.com/etc.clientlibs/keybank/clientlibs/clientlib-site/resources/images/key-logo.svg" alt="KeyBank Logo"/>
+        <a href="#" style="color:#c00; font-weight:bold;">Sign Off</a>
+    </div>
+
+    <div class="content">
+        <div class="account-info">
+            <h1>$3,345.76</h1>
+            <p>Jar Transfer — 2025-09-04</p>
+        </div>
+
+        <div class="transaction">Zelle - Melissa Coy: -$60.00</div>
+        <div class="transaction">ATM Withdrawal - Bank of America: -$250.00 (Last Friday)</div>
+        <div class="transaction">ACH Credit - Random Deposit: $532.00</div>
+        <div class="transaction">Pending - Amazon Prime: -$14.99</div>
+    </div>
+
+    <div class="nav">
+        <a href="#">Accounts</a>
+        <a href="#">Pay & Transfer</a>
+        <a href="#">Help Hub</a>
+        <a href="#">Offers</a>
+        <a href="#">More</a>
+    </div>
+</body>
+</html>
